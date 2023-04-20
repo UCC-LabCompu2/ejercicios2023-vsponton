@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    font-family:"Gugy",cursive;
+    background: linear-gradient(to right, #6cd971, #d7c2ad);
+}
+div{
+    border: 2px dashed cornflowerblue;
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    box-shadow: 10px 12px #999999;
+}
+#principal{
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+
+}
+div.especial h3{
+    font-family: 'Vesper Libre', serif;
+    text-shadow: 10px 5px #999;
+}
