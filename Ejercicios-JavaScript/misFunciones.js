@@ -33,21 +33,28 @@ function cambiarUnidades(id,valor) {
 function convertirGR(id) {
     var grad,rad;
     if (id=="grados"){
-        grad = document.getElementById(elementld: "grados").value;
+        grad = document.getElementById("grados").value;
         rad = (grad*Math.PI)/180;
     }else if (id=="radianes"){
-        rad = document.getElementById(elementld: "radianes").value;
+        rad = document.getElementById("radianes").value;
         grad = (rad*180)/Math.PI
     }
 
-    document.getElementById(elementld: "grados").value = grad;
-    document.getElementById(elementld: "radianes").value = rad;
+    document.getElementById("grados").value = grad;
+    document.getElementById("radianes").value = rad;
 }
 
 function mostrar_ocultar(valorMO) {
     if (valorMO=="val_ocultar"){
-        document.getElementById(elementld:"divMO") .style.display = 'block';
+        document.getElementById ("divMO") .style.display = 'block';
     }else if (valorMO=="val_ocultar"){
-        document.getElementById(elementld: "divMO").style.display = 'none';
+        document.getElementById ("divMO").style.display = 'none';
     }
+}
+
+function calcularSuma() {
+    var num1,num2;
+    num1=Number (document.getElementsByName("sum_num1") [0].value);
+    num2=Number(document.getElementsByName("sum_num2") [0].value);
+    document.getElementsByName("sum_total" ) [0].value= num1 + num2;
 }
